@@ -1,1 +1,1 @@
-Day 1:
+Day 1: Jeg har begynt å lære hvordan man bruker Vim (som Everett sier er veldig viktig). Har begynt på en slags nettside for å hjelpe til med norsk for elever med kort botid i Norge. Lagde kulepunkter og et kontaktskjema. 
