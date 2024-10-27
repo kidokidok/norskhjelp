@@ -1,100 +1,113 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Norskhjelp</title>
-        <link rel="icon" href="potato.png" type="image/x-icon">
-    <style>
-        body {
-            font-family: Arial nova, sans-serif;
-            background-color: #f0ffff;
-	    margin: 0;
-            padding: 20px;
-        }
-        h1 {
-            color: #333;
-        }
-        p {
-            color: #666;
-        }
-        .highlight {
-            background-color: yellow;
-        }
-	.banner-flag {
-		max-width: 100px;	
-	}
-	.header-background {
-		background-color: #eddfe7;
-		display: flex;
-	}
-	.header-half {
-		width: 50%;
-	}
-    </style>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Norskhjelp</title>
+	<link rel="icon" href="potato.png" type="image/x-icon">
+	<style>
+		body {
+			font-family: Arial nova, sans-serif;
+			background-color: #f0ffff;
+			margin: 0;
+			padding: 20px;
+		}
+
+		h1 {
+			color: #333;
+		}
+
+		p {
+			color: #666;
+		}
+
+		.highlight {
+			background-color: yellow;
+		}
+
+		.banner-flag {
+			max-width: 100px;
+		}
+
+		.header-background {
+			background-color: #eddfe7;
+			display: flex;
+		}
+
+		.header-half {
+			width: 50%;
+		}
+	</style>
 </head>
+
 <body>
-<div class="header-background" >
-	<div class="header-half">
-		<h1>Norskhjelp</h1>
-		<p>Her kommer tips</p>
+	<div class="header-background">
+		<div class="header-half">
+			<h1>Norskhjelp</h1>
+			<p>Her kommer <strong>tips</strong></p>
+		</div>
+		<div class="header-half">
+			<img class="banner-flag" src="potato.png" />
+		</div>
 	</div>
-	<div class="header-half">
-		<img class="banner-flag" src="potato.png" />
-	</div>
-</div>
-<h2>Læringsstrategier</h2>
-<ul>
-	<li>Lesing</li>
-	<li>Begreper</li>
-	<li>Muntlig</li>
-</ul>
-<h2>Ressurser</h2>
-<ul>
-	<li>
-		<a href="https://www.ntnu.edu/learnnow">LearnNow</a>
-	</li>
-	<li>
-		<a href="https://lexin.oslomet.no/#/">Lexin ordbok</a>
-	</li>
-</ul>
-<h2>Ta kontakt!</h2>
-<form>
-	<div>
-		<label for="navn">Navn</label>
-		<input name="navn" id="navn"/>
-	</div>
+	<h2>Læringsstrategier</h2>
+	<ul>
+		<li>
+			<a href="lesing.html">Lesing</a>
+		</li>
+		<li>
+			<a href="begreper.html">Begreper</a>
+		</li>
+		<li>Muntlig</li>
+	</ul>
+	<h2>Ressurser</h2>
+	<ul>
+		<li>
+			<a href="https://www.ntnu.edu/learnnow">LearnNow</a>
+		</li>
+		<li>
+			<a href="https://lexin.oslomet.no/#/">Lexin ordbok</a>
+		</li>
+	</ul>
+	<h2>Ta kontakt!</h2>
+	<form>
+		<div>
+			<label for="navn">Navn</label>
+			<input name="navn" id="navn" />
+		</div>
 
-	<div>
-		<label for="e-post">E-post</label>
-		<input name="e-post" id="e-post" type="email" />
-	</div>
+		<div>
+			<label for="e-post">E-post</label>
+			<input name="e-post" id="e-post" type="email" />
+		</div>
 
-	<div>
-		<fieldset>
-			<legend>Hva trenger du hjelp med?</legend>
-			<label for="hjelp-grammatikk">
-				 <input name ="hjelp" id="hjelp-grammatikk" type="checkbox"/>
-				Grammatikk
-			</label>
+		<div>
+			<fieldset>
+				<legend>Hva trenger du hjelp med?</legend>
+				<label for="hjelp-grammatikk">
+					<input name="hjelp" id="hjelp-grammatikk" type="checkbox" />
+					Grammatikk
+				</label>
 
-			<label for="hjelp-uttale">
-				  <input name ="hjelp" id="hjelp-uttale" type="checkbox"/>
-				Uttale
-			</label>
-			<label for="hjelp-ordforråd">
-				   <input name ="hjelp" id="hjelp-ordforråd" type="checkbox"/>
-				Ordforråd
-			</label>
-			<label for="hjelp-læringsstrategier">
-				 <input name ="hjelp" id="hjelp-grammatikk" type="checkbox"/>	
-				Læringsstrategier
-			</label>
-		</fieldset>
-	</div>
-	<div>
-		<button>Send inn</button>
-	</div>
-</form>
+				<label for="hjelp-uttale">
+					<input name="hjelp" id="hjelp-uttale" type="checkbox" />
+					Uttale
+				</label>
+				<label for="hjelp-ordforråd">
+					<input name="hjelp" id="hjelp-ordforråd" type="checkbox" />
+					Ordforråd
+				</label>
+				<label for="hjelp-læringsstrategier">
+					<input name="hjelp" id="hjelp-grammatikk" type="checkbox" />
+					Læringsstrategier
+				</label>
+			</fieldset>
+		</div>
+		<div>
+			<button>Send inn</button>
+		</div>
+	</form>
 </body>
+
 </html>
