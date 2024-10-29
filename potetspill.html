@@ -49,6 +49,7 @@
             position: absolute;
             animation: rotate 2s linear infinite;
         }
+        
         @keyframes rotate {
             from { transform: rotate(0deg); }
             to { transform: rotate(360deg); }
@@ -90,36 +91,34 @@
 
 </html>
 <script lang="javascript">
-        const flyer = document.getElementById('potatofield');
-        const speed = 2; // Speed of movement
+    const flyer = document.getElementById('potatofield');
+    const speed = 5; // Speed of movement
 
-        let x = 0;
-        let y = 0;
-        let directionX = 1;
-        let directionY = 1;
+    let x = 0;
+    let y = 0;
+    let directionX = 1;
+    let directionY = 1;
 
-        function move() {
-            const rect = flyer.getBoundingClientRect();
+    function move() {
+        const rect = flyer.getBoundingClientRect();
 
-            // Change direction if hitting the borders
-            if (rect.right >= window.innerWidth || rect.left <= 0) {
-                directionX *= -1;
-            }
-            if (rect.bottom >= window.innerHeight || rect.top <= 0) {
-                directionY *= -1;
-            }
-
-            // Update position
-            x += directionX * speed;
-            y += directionY * speed;
-
-            flyer.style.left = x + 'px';
-            flyer.style.top = y + 'px';
-
-            requestAnimationFrame(move);
+        // Change direction if hitting the borders
+        if (rect.right >= window.innerWidth || rect.left <= 0) {
+            directionX *= -1;
+        }
+        if (rect.bottom >= window.innerHeight || rect.top <= 0) {
+            directionY *= -1;
         }
 
+        // Update position
+        x += directionX * speed;
+        y += directionY * speed;
 
+        flyer.style.left = x + 'px';
+        flyer.style.top = y + 'px';
+
+        requestAnimationFrame(move);
+    }
 
     let numFarmers=0;
     let numPotatoes=0;
