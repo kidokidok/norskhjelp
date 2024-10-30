@@ -1,0 +1,42 @@
+
+		body {
+			font-family: Arial nova, sans-serif;
+			background-color: #f0ffff;
+			margin: 0;
+			padding: 20px;
+		}
+
+		h1 {
+			color: #333;
+		}
+
+		p {
+			color: #666;
+		}
+
+		.highlight {
+			background-color: yellow;
+		}
+
+		.banner-flag {
+			max-width: 100px;
+		}
+
+		.header-background {
+			background-color: #eddfe7;
+			display: flex;
+		}
+
+		.header-half {
+			width: 50%;
+		}
+
+        .flyer {
+            position: absolute;
+            animation: rotate 2s linear infinite;
+        }
+        
+        @keyframes rotate {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
