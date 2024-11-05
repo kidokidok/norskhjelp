@@ -3,3 +3,4 @@
 - Day 2: Jeg har lært å bruke VS code og CSS. Har endret på skrifttype, farger, bildeplassering og -størrelse. Har lagt til to underordnede sider for lesing og begreper.
 - Day 3: Min læremester og jeg har laget et spill der man skal mate bønder med poteter. Her har vi prøvd javascript. Det var gøy.
 - Day 4: Lagde egne filer for css og js og importerte dem inn i html-koden 
+- Day 5: Dreiv med noen servergreier. Skjønte ikke alt, men la inn alle sidene sånn at de kan "serves"
