@@ -10,7 +10,7 @@ const fs = require('fs');
 const path = require('path');
 
 const server = http.createServer((req, res) => {
-    if (req.url === '/') {
+    if (req.url === '/' || req.url === '/index.html') {
         fs.readFile(path.join(__dirname, 'index.html'), 'utf-8', (err, data) => {
             if (err) {
                 res.statusCode = 500;
